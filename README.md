@@ -75,10 +75,3 @@ It empowers students to **buy, sell, and trade textbooks securely** while promot
 - CRUD textbook listings  
 - Azure deployment proof  
 
----
-
-##  How to Run Locally
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/somerafrica/edushare.git
-
