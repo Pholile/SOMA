@@ -62,10 +62,6 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     try
     {
-        // Ensure database migrations are applied before attempting to seed data
-        var db = services.GetRequiredService<ApplicationDbContext>();
-        await db.Database.MigrateAsync();
-
         await DbInitializer.SeedRolesAndAdminAsync(services);
     }
     catch (Exception ex)
@@ -114,7 +110,7 @@ app.UseStaticFiles(new StaticFileOptions
     }
 });
 
-app.UseRouting(); // FIXED: Added UseRouting before Auth middleware so it works correctly<Pholile>
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseAntiforgery();
