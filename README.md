@@ -66,12 +66,5 @@ It empowers students to **buy, sell, and trade textbooks securely** while promot
 - QR code verification  
 - AI-assisted textbook recommendations  
 
----
 
-## Screenshots
-*(Pretend placeholders — replace with actual screenshots)*  
-- Login & Registration  
-- Dashboard  
-- CRUD textbook listings  
-- Azure deployment proof  
 
